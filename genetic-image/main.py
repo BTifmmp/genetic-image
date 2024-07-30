@@ -10,8 +10,8 @@ STARTING_IMAGE_PATH = "" # Optional
 IMAGE_SCALE = 1 # Lower scale improves efficency
 # Shapes
 SHAPE_TYPE = shapes.RECTANGLE
-SHAPE_SIZE = 4
-SHAPE_RECTANGLE_RATIO = 2.5
+SHAPE_SIZE = 3
+SHAPE_RECTANGLE_RATIO = 4
 SHAPE_ROTATION = 0 # Radians - math.pi = 180degree
 SHAPE_OUTLINE = 0
 # Algorithm

@@ -44,18 +44,19 @@ pip install -r requirments.txt
 All algortihm's controls are inside ```genetic-image/main.py``` file
 ```python
 # Images
-TARGET_IMAGE_PATH = ""
+TARGET_IMAGE_PATH = "../examples/targets/starry_night.png"
 STARTING_IMAGE_PATH = "" # Optional
-IMAGE_SCALE = 0.25 # Lower scale improves efficency
+IMAGE_SCALE = 1 # Lower scale improves efficency
 # Shapes
-SHAPE_TYPE = shapes.CIRCLE
-SHAPE_SIZE = 10
-SHAPE_ROTATION = 0 # Radians
+SHAPE_TYPE = shapes.RECTANGLE
+SHAPE_SIZE = 4
+SHAPE_RECTANGLE_RATIO = 2.5
+SHAPE_ROTATION = 0 # Radians - math.pi = 180degree
 SHAPE_OUTLINE = 0
 # Algorithm
-NUMBER_OF_SHAPES = 2000
-NUMBER_OF_INDIVIDUALS = 100
-MUTATION_RATE = 0.0005
+NUMBER_OF_SHAPES = 3000
+NUMBER_OF_INDIVIDUALS = 200
+MUTATION_RATE = 0.0004
 CROSSOVER_RATE = 0.9
 TOURNAMENT_SIZE = 8
 # Saving
