@@ -2,6 +2,22 @@
 ## Overview
 This project uses a genetic algorithm to recreate images with simple shapes like circles, squares, rectangles. The algorithm evolves a population of images to minimize the difference between a target image and the generated images over successive generations.
 ## Results
+Each Mona Lisa is made using population of 400 and 5000 generations and 3000 shapes.\
+3000 empty squares turned out to be not enough to cover whole image, leaving top part black.
+
+<table width="60%">
+  <tr>
+    <th>Orignal</th>
+    <th>Circles</th>
+    <th>Squares Empty Rotated 45</th>
+  </tr>
+  <tr>
+    <td width="20%"><img style="width: 100%;" src="examples/targets/mona.png"/></td>
+    <td width="20%"><img style="width: 100%;" src="examples/results/mona_circles.gif"/></td>
+    <td width="20%"><img style="width: 100%;" src="examples/results/mona_squares.gif"/></td>
+  </tr>
+</table>
+
 ## Algorithm Details
 ### Fitness
 The fitness function determines how closely the image composed of shapes matches the original image. This project utilizes the Structural Similarity Index Measure (SSIM) from the scikit-image library.
@@ -11,6 +27,8 @@ The mutation process replaces one of the genes with a newly generated one, with 
 Parents are selected using a tournaments selection, which randomly selects a subset of individuals form population and return the fittest one of them.
 ### Crossoever
 Crossover is perfomred using uniform method, where each gene has a 50% chance of being inherited from either parent. Two parents produce two offsprings with opposing genes.
+### Why is it greyscale?
+There are only 256 colors when using greyscale comapred to 16,777,216 when using RGB making it easier to for algorithm to find fitting color for shape.
 ## What affects execution speed
 - image size
 - population size
