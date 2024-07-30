@@ -31,15 +31,21 @@ def main():
     target = target.convert('L')
     target = target.resize((round(target.size[0]*IMAGE_SCALE), round(target.size[1]*IMAGE_SCALE)))
     
+    starting = None
+    if STARTING_IMAGE_PATH:
+        starting = Image.open(STARTING_IMAGE_PATH)
+        starting = starting.convert('L')
+        starting = starting.resize(target.size)
+    
     shapes_config = shapes.ShapesConfig()
-    shapes_config.type = shapes.SQUARE_EMPTY
+    shapes_config.type = SHAPE_TYPE
     shapes_config.rotation = SHAPE_ROTATION
     shapes_config.outline = SHAPE_OUTLINE
     shapes_config.size = SHAPE_SIZE
     shapes_config.rectangle_ratio = SHAPE_RECTANGLE_RATIO
     shapes_config.number_of_shapes = NUMBER_OF_SHAPES
     
-    pop = Population(target, shapes_config)
+    pop = Population(target, shapes_config, starting)
     print("Initializing population")
     pop.initialize_population(NUMBER_OF_INDIVIDUALS)
     
@@ -54,8 +60,7 @@ def main():
         print(f"Highest fitness: {top[0].fitness}")           
         
         if pop.generation % SAVE_IMG_EVERY == 0:
-            for ind in top:
-                ind.image.save(f"{SAVE_DIR_PATH}/gen{pop.generation}.png", "PNG")
+            top[0].image.save(f"{SAVE_DIR_PATH}/gen{pop.generation}.png", "PNG")
         
         pop.next_generation(TOURNAMENT_SIZE, CROSSOVER_RATE)
         pop.mutate(MUTATION_RATE)
