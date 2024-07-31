@@ -7,9 +7,9 @@ P-population G-generations S-shapes
 
 <table width="75%">
   <tr>
-    <th>Orignal</th>
-    <th>Circles</th>
-    <th>Squares Empty Rotated 45</th>
+    <th width="33.3%">Orignal</th>
+    <th width="33.3%">Circles</th>
+    <th width="33.3%">Squares Empty Rotated 45</th>
   </tr>
   <tr>
     <td></td>
@@ -27,9 +27,9 @@ P-population G-generations S-shapes
 
 <table width="75%">
   <tr>
-    <th>Orignal</th>
-    <th>Rectangles</th>
-    <th>Circles Empty</th>
+    <th width="33.3%">Orignal</th>
+    <th width="33.3%">Rectangles</th>
+    <th width="33.3%">Circles Empty</th>
   </tr>
     <tr>
     <td></td>
@@ -47,8 +47,8 @@ P-population G-generations S-shapes
 
 <table width="50%">
   <tr>
-    <th>Orignal</th>
-    <th>Squares Rotated 45</th>
+    <th width="50%">Orignal</th>
+    <th width="50%">Squares Rotated 45</th>
   </tr>
     <tr>
     <td></td>
