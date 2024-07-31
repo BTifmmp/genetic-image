@@ -12,14 +12,14 @@ P-population G-generations S-shapes
     <th>Squares Empty Rotated 45</th>
   </tr>
   <tr>
-    <td width="25%"></td>
-    <td width="25%">P-400, G-5000, S-3000</td>
-    <td width="25%">P-400, G-5000, S-3000</td>
+    <td></td>
+    <td>P-400, G-5000, S-3000</td>
+    <td>P-400, G-5000, S-3000</td>
   </tr>
   <tr>
-    <td width="25%"><img style="width: 100%;" src="examples/targets/mona.png"/></td>
-    <td width="25%"><img style="width: 100%;" src="examples/results/mona_circles.gif"/></td>
-    <td width="25%"><img style="width: 100%;" src="examples/results/mona_squares.gif"/></td>
+    <td><img style="width: 100%;" src="examples/targets/mona.png"/></td>
+    <td><img style="width: 100%;" src="examples/results/mona_circles.gif"/></td>
+    <td><img style="width: 100%;" src="examples/results/mona_squares.gif"/></td>
   </tr>
 </table>
 
