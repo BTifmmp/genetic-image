@@ -5,11 +5,11 @@ This project uses a genetic algorithm to recreate images with simple shapes like
 P-population G-generations S-shapes
 ### Mona Lisa
 
-<table width="75%">
+<table style="width: 75%">
   <tr>
-    <th width="33.3%">Orignal</th>
-    <th width="33.3%">Circles</th>
-    <th width="33.3%">Squares Empty Rotated 45</th>
+    <th style="width: 33.3%">Orignal</th>
+    <th style="width: 33.3%">Circles</th>
+    <th style="width: 33.3%">Squares Empty Rotated 45</th>
   </tr>
   <tr>
     <td></td>
@@ -25,11 +25,11 @@ P-population G-generations S-shapes
 
 ### Starry Night
 
-<table width="75%">
+<table style="width: 75%">
   <tr>
-    <th width="33.3%">Orignal</th>
-    <th width="33.3%">Rectangles</th>
-    <th width="33.3%">Circles Empty</th>
+    <th style="width: 33.3%">Orignal</th>
+    <th style="width: 33.3%">Rectangles</th>
+    <th style="width: 33.3%">Circles Empty</th>
   </tr>
     <tr>
     <td></td>
@@ -45,10 +45,10 @@ P-population G-generations S-shapes
 
 ### Girl with a Pearl Earring
 
-<table width="50%">
+<table style="width: 50%">
   <tr>
-    <th width="50%">Orignal</th>
-    <th width="50%">Squares Rotated 45</th>
+    <th style="width: 50%">Orignal</th>
+    <th style="width: 50%">Squares Rotated 45</th>
   </tr>
     <tr>
     <td></td>
